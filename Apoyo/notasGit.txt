@@ -1,0 +1,36 @@
+Comando de git:
+-git init //Inicializar el repositorio local
+
+-git status //Visualizar el estado de archivos que han sufrdio cambios (nos ayuda ver en que rama estamos)
+
+-git add (nombre archivos) //Preparar un archivo para poder realizar un commit
+
+-git add . //Preparar todos los archivos para poder realizar un commit
+
+-git commit -m "" //Se realiza el commit para subir los cambios
+
+-git stash //Refactorizar el proyecto y regresar al ultimo commit realizado
+
+
+Git-Hub
+-git remote add origin https://github.com/(información repo remote).git //Subir respositorio local a github
+
+-git push //Se suben todos los cambios despues de haber realizado el 
+
+-git pull //Arrastramos todos los cambios que se hayan confirmado y realizado ultimamente
+
+-git branch //nos muestra el arbol o todas las ramas que tenemos en el proyecto y en la rama que estamos
+-git branch (name branch) //Crea una rama nueva con la que podemos trabajar
+
+-git checkout (nombre branch) //Cambiamos de rama para trabajar
+-git checkout -b (name branch) //Se puede crear una rama nueva haciendo uso de este Comando
+
+
+-git merge (name branch) //Fusionamos la rama principal con la rama que deseemos guardar los cambio realizados
+Para ello primeo nos debemos posicionar en la rama principal (git checkout master) y poner la rama que queremos fusinar
+
+
+Prevenciones:
+
+Se recomienda utilizar este comando antes de realizar nuevos cambios para que no se sobre escriba y haya choques al subir nuevos cambios.
+-git pull //Carga todos los cambios que se han hecho en una rama (actualiza a lo ultimo que se ha subido)

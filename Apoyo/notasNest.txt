@@ -1,0 +1,31 @@
+-nest install -g @nestjs/cli
+
+-nest new (nombre) //Crea nuevo proyecto utilizando nest
+
+-npm start //Corre el proyecto en produccion 
+(no recomendable)
+
+-npm run start:dev //Corremos el pryecto modo Watch para poder Visualizar cambios realizados 
+(utilizar siempre que estemos programando)
+
+-npm run build //Convierte todo el codigo hecho en TS para mandarlo a produccion
+
+-npm run lint //Ayuda a corroborar que no haya errores en el proyecto
+
+
+
+Funcionalidades y estructura.
+    Una vez creados los arcivos, la carpeta con el nombre del proyecto nos arroja 4 carpetas importantes.
+    Aunque nos competen dos en particular.
+dist -> trabaja todo el codigo en TS que enviaremos en produccion
+src -> aqui tendremos todo el codigo para el backend ya que manejaremos funciones, rutas, entre otras cosas
+
+    En la carpeta src hay archivos que nos podemos quedar solamente con ellas sin ningun problema:
+    -main.ts
+    -app.module.ts
+
+
+
+-nest generate module (name) //Genera un nuevo modulo agregando las conexiones en el proyecto
+-nest generate controller (moduleName) //Genera un controlador en la carpeta del modulo con su mismo nombre
+-nest generate controller (moduleName) --no-spec //Genera el controlar sin el archivo de test
